@@ -29,6 +29,8 @@ List of additional tools and application that are installed with the VM.
 - Docker
 - Docker Compose
 - OpenShift CLI (OC)
+- Kubernetes CLI (kubectl)
+- Minikube
 - Visual Studio Code
 - Git
 
@@ -118,7 +120,7 @@ During the workshop it is recommended to close all programs and stop unneeded pr
 
 ## Known Issues
 
-Sometimes things don't run as expected, especially as they are many files that are downloaded from various sources. If an error should happen during the setup often it is already enough to run `vagrant up` again.
+Sometimes things don't run as expected, especially as there are many files that are downloaded from various sources. If an error should happen during the setup often it is already enough to run `vagrant up` again.
 
 ## Project Principles
 

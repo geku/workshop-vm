@@ -54,9 +54,10 @@ Vagrant.configure(2) do |config|
       wvm.vm.provision "file", source: ENV['HOME']+"/.ssh/known_hosts", destination: ".ssh/known_hosts"
     end
 
-    # install docker and openshift CLI
+    # install docker, openshift CLI, kubectl CLI and minikube
     wvm.vm.provision "shell", path: "provision/docker.sh"
     wvm.vm.provision "shell", run: "always", path: "provision/openshift.sh"
+    wvm.vm.provision "shell", run: "always", path: "provision/kubernetes.sh"
 
     # install an informative bash-git-prompt
     wvm.vm.provision "shell", path: "provision/git-bash-prompt.sh"
