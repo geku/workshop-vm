@@ -3,6 +3,8 @@ KUBECTL_VERSION="v1.7.8"
 MINIKUBE_VERSION="v0.22.3"
 ETCD_VER=v3.2.9
 
+apt-get install -y  jq
+
 if /usr/bin/kubectl version --client | grep "GitVersion:\"$KUBECTL_VERSION\""; then
     echo "kubectl client $KUBECTL_VERSION is already installed. done"
 else
